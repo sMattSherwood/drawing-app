@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton blueButton = (ImageButton) findViewById(R.id.Blue);
         ImageButton blackButton = (ImageButton) findViewById(R.id.Black);
         ImageButton whiteButton = (ImageButton) findViewById(R.id.White);
-
+        // on click of button uses the set Drawing color to change the color of the line
             View.OnClickListener red = (view)-> {
                 lines.setDrawingColor(1);
             };
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton pencilButton = (ImageButton) findViewById(R.id.Pencil);
         ImageButton markerButton = (ImageButton) findViewById(R.id.Marker);
         ImageButton paintButton = (ImageButton) findViewById(R.id.PaintBrush);
-
+        // on click of button will change the width of lines
             View.OnClickListener pencil = (view)-> {
                 lines.setDrawingStyle(1);
             };
@@ -73,8 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
         // this button will clear the screen of all lines
         Button clearButton = (Button) findViewById(R.id.Clear);
-
-            // when user clicks button it will remove all lines
+        // when user clicks button it will remove all lines
             View.OnClickListener clear = (view)-> {
                 lines.empty();
             };
